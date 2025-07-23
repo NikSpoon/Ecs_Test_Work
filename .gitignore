@@ -97,3 +97,9 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+Ecs_Test_Work_Game_Rikon/Library/
+
+Ecs_Test_Work_Game_Rikon/Temp/
+
+Ecs_Test_Work_Game_Rikon/UserSettings/
