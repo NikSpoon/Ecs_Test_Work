@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 814dba055c7363b4abde26f2a5c75d69
+  productGUID: a15ede7c82093e94f8131aa637657899
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Ecs_Test_Work_Game_Rikon
+  productName: "DOTS_Netcode \u0434\u043B\u044F Entities_ECS"
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -838,14 +838,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Ecs_Test_Work_Game_Rikon
+  metroPackageName: "DOTS_Netcode \u0434\u043B\u044F Entities_ECS"
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Ecs_Test_Work_Game_Rikon
+  metroApplicationDescription: "DOTS_Netcode \u0434\u043B\u044F Entities_ECS"
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -916,10 +916,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 9a7417aa-67c6-4a01-9bc3-a9c3bbfbda17
+  cloudProjectId: 1fdc8e2a-7c82-4da9-a7c3-da27e44578d1
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Ecs_Test_Work_Game_Rikon
+  projectName: "DOTS_Netcode \u0434\u043B\u044F Entities_ECS"
   organizationId: spoonka
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
