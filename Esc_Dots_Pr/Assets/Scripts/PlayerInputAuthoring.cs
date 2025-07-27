@@ -1,10 +1,10 @@
-using Unity.Burst;
 using Unity.Entities;
 using Unity.NetCode;
 using UnityEngine;
 
 public struct PlayerInput : IInputComponentData
 {
+    public bool isRunning;
     public int Horizontal;
     public int Vertical;
 }
@@ -23,7 +23,7 @@ public class PlayerInputAuthoring : MonoBehaviour
 }
 
 [UpdateInGroup(typeof(GhostInputSystemGroup))]
-public partial struct SampleCubeInput : ISystem
+public partial struct SamplePlayerInput : ISystem
 {
     public void OnCreate(ref SystemState state)
     {
@@ -44,6 +44,8 @@ public partial struct SampleCubeInput : ISystem
                 playerInput.ValueRW.Vertical -= 1;
             if (Input.GetKey(KeyCode.W))
                 playerInput.ValueRW.Vertical += 1;
+
+            playerInput.ValueRW.isRunning =  playerInput.ValueRW.Horizontal != 0 || playerInput.ValueRW.Vertical != 0;
         }
     }
 }

@@ -164,12 +164,12 @@ MonoBehaviour:
   m_ShapeType: 3
   m_PrimitiveCenter:
     x: 0
-    y: 2.113597
+    y: 1.1
     z: 0
   m_PrimitiveSize:
     x: 0.94
     y: 0.94
-    z: 2.1135974
+    z: 2.2
   m_PrimitiveOrientation:
     Value:
       x: -90
@@ -177,15 +177,15 @@ MonoBehaviour:
       z: -90
     RotationOrder: 4
   m_Capsule:
-    Height: 2.1135974
+    Height: 2.2
     Radius: 0.47
     Axis: 2
   m_Cylinder:
-    Height: 2.1135974
+    Height: 2.2
     Radius: 0.47
     Axis: 2
   m_CylinderSideCount: 20
-  m_SphereRadius: 1.0567987
+  m_SphereRadius: 1.1
   m_MinimumSkinnedVertexWeight: 0.1
   m_ConvexHullGenerationParameters:
     m_SimplificationTolerance: 0.040592693
@@ -344,11 +344,53 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vampire A Lusth (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2346275881050335890, guid: 0b3d7f38fef73ad468ff72458ab779fb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 88bf0bad5886784499229ba254022844, type: 2}
+    - target: {fileID: 2346275881050335890, guid: 0b3d7f38fef73ad468ff72458ab779fb, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 88bf0bad5886784499229ba254022844, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 0b3d7f38fef73ad468ff72458ab779fb, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3156482ff090b0645bc58199992b3eee, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 0b3d7f38fef73ad468ff72458ab779fb, type: 3}
+      propertyPath: m_AnimatePhysics
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0b3d7f38fef73ad468ff72458ab779fb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7670603579541628516}
   m_SourcePrefab: {fileID: 100100000, guid: 0b3d7f38fef73ad468ff72458ab779fb, type: 3}
+--- !u!95 &895373027275091642 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 0b3d7f38fef73ad468ff72458ab779fb, type: 3}
+  m_PrefabInstance: {fileID: 6703490052857664299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5892675881679138426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0b3d7f38fef73ad468ff72458ab779fb, type: 3}
+  m_PrefabInstance: {fileID: 6703490052857664299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7670603579541628516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5892675881679138426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d5dc3d875f87946939b75a41b6a061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 895373027275091642}
 --- !u!4 &6524921818406417600 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0b3d7f38fef73ad468ff72458ab779fb, type: 3}
