@@ -1,8 +1,8 @@
+﻿using Unity.Burst;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.NetCode;
 using Unity.Transforms;
-using Unity.Burst;
 
 [UpdateInGroup(typeof(PredictedSimulationSystemGroup))]
 [BurstCompile]
@@ -11,6 +11,7 @@ public partial struct PlayerMovementSystem : ISystem
     [BurstCompile]
     public void OnUpdate(ref SystemState state)
     {
+        
         var speed = SystemAPI.Time.DeltaTime * 4;
         foreach (var (input, trans) in SystemAPI.Query<RefRO<PlayerInput>, RefRW<LocalTransform>>().WithAll<Simulate>())
         {
@@ -18,5 +19,6 @@ public partial struct PlayerMovementSystem : ISystem
             moveInput = math.normalizesafe(moveInput) * speed;
             trans.ValueRW.Position += new float3(moveInput.x, 0, moveInput.y);
         }
+
     }
 }

@@ -3,6 +3,7 @@ using Unity.Collections;
 using Unity.Entities;
 using Unity.NetCode;
 using Unity.Burst;
+using UnityEngine;
 
 
 
@@ -52,7 +53,14 @@ public partial struct GoInGameClientSystem : ISystem
     public void OnUpdate(ref SystemState state)
     {
         var commandBuffer = new EntityCommandBuffer(Allocator.Temp);
-        var playerPrefix = new FixedString64Bytes("Player");
+
+        FixedString64Bytes playerPrefix = default;
+        playerPrefix.Append('P');
+        playerPrefix.Append('l');
+        playerPrefix.Append('a');
+        playerPrefix.Append('y');
+        playerPrefix.Append('e');
+        playerPrefix.Append('r');
 
         foreach (var (id, entity) in
                  SystemAPI.Query<RefRO<NetworkId>>()
@@ -76,6 +84,8 @@ public partial struct GoInGameClientSystem : ISystem
         }
 
         commandBuffer.Playback(state.EntityManager);
+        commandBuffer.Dispose(); 
+        state.Enabled = false;
     }
 }
 
@@ -142,7 +152,7 @@ public partial struct GoInGameServerSystem : ISystem
             UnityEngine.Debug.Log($"'{worldName}' setting connection '{networkId.Value}' to in game, spawning a Ghost '{prefabName}' with SelectedCharacterIndex={assignedIndex}!");
 #endif  
             var player = commandBuffer.Instantiate(prefabToSpawn);
-
+           
             commandBuffer.SetComponent(player, new GhostOwner { NetworkId = networkId.Value });
 
             commandBuffer.AddComponent(player, new PlayerInfo
@@ -156,6 +166,7 @@ public partial struct GoInGameServerSystem : ISystem
         }
 
         commandBuffer.Playback(state.EntityManager);
-
+        commandBuffer.Dispose();
     }
+
 }
