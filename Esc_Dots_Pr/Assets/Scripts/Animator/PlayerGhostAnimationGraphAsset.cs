@@ -47,7 +47,7 @@ public class PlayerGhostAnimationGraphAsset : GhostAnimationGraphAsset
 
         var behaviour = new SimpleGhostPlayableBehaviour(mixer, controller);
         behaviours.Add(behaviour);
-
+        Debug.Log($"[GhostAnim] Animator: {animator}, IsActive: {animator.gameObject.activeInHierarchy}");
         return mixer;
     }
 

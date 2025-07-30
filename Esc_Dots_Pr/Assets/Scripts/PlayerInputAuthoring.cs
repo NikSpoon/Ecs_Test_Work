@@ -4,7 +4,8 @@ using UnityEngine;
 
 public struct PlayerInput : IInputComponentData
 {
-    public bool isRunning;
+    public float Speed;
+    public bool IsRunning;
     public int Horizontal;
     public int Vertical;
 }
@@ -45,7 +46,8 @@ public partial struct SamplePlayerInput : ISystem
             if (Input.GetKey(KeyCode.W))
                 playerInput.ValueRW.Vertical += 1;
 
-            playerInput.ValueRW.isRunning =  playerInput.ValueRW.Horizontal != 0 || playerInput.ValueRW.Vertical != 0;
+            playerInput.ValueRW.IsRunning =  playerInput.ValueRW.Horizontal != 0 || playerInput.ValueRW.Vertical != 0;
+          
         }
     }
 }

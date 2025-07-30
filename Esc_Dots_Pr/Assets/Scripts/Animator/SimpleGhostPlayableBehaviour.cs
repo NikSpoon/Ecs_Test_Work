@@ -21,7 +21,7 @@ public class SimpleGhostPlayableBehaviour : GhostPlayableBehaviour
     public override void PreparePredictedData(NetworkTick serverTick, float deltaTime, bool isRollback)
     {
         var input = controller.GetEntityComponentData<PlayerInput>();
-        IsRunning = input.isRunning;
+        IsRunning = input.IsRunning;
 
         if (IsRunning == lastIsRunning)
             return;
