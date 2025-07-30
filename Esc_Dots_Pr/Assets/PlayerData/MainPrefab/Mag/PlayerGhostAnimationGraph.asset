@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PlayerGhostAnimationGraph
   m_EditorClassIdentifier: 
   m_PlayableDataHash: 0
-  idleClip: {fileID: -203655887218126122, guid: 9ec1c192fed984c458eda64ff1025713, type: 3}
-  runClip: {fileID: -203655887218126122, guid: 8f6d000ae95a27c48b860fd812f2d0bf, type: 3}
+  idleClip: {fileID: 7400000, guid: d8a59fe159e76084895755994e779c34, type: 2}
+  runClip: {fileID: 7400000, guid: 168bc7871a76045408127f3679ee3ad3, type: 2}

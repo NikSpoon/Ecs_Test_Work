@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: -7529556045817100417}
   - component: {fileID: 7880179007221939824}
   - component: {fileID: 3201445420009847309}
-  - component: {fileID: -3436562747346518989}
   - component: {fileID: -1660658473358896966}
   - component: {fileID: -1334202736220064001}
+  - component: {fileID: -6436051001711122409}
   m_Layer: 0
   m_Name: Playr2
   m_TagString: Untagged
@@ -74,30 +74,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab3428e531ff7d147aff35311139e25a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-3436562747346518989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4641162836485252617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c79d771cedb4794bf100ce60df5f764, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DefaultGhostMode: 2
-  SupportedGhostModes: 3
-  OptimizationMode: 0
-  Importance: 1
-  prefabId: b6734d9fd10b30a4a9a9f48865f5d05f
-  HasOwner: 1
-  SupportAutoCommandTarget: 1
-  TrackInterpolationDelay: 0
-  GhostGroup: 0
-  UsePreSerialization: 0
-  RollbackPredictedSpawnedGhostState: 0
-  RollbackPredictionOnStructuralChanges: 1
 --- !u!114 &-1660658473358896966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,6 +268,30 @@ MonoBehaviour:
         Tag07: 0
     m_SerializedVersion: 1
   m_SerializedVersion: 1
+--- !u!114 &-6436051001711122409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4641162836485252617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c79d771cedb4794bf100ce60df5f764, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultGhostMode: 2
+  SupportedGhostModes: 3
+  OptimizationMode: 0
+  Importance: 1
+  prefabId: b6734d9fd10b30a4a9a9f48865f5d05f
+  HasOwner: 1
+  SupportAutoCommandTarget: 1
+  TrackInterpolationDelay: 0
+  GhostGroup: 0
+  UsePreSerialization: 0
+  RollbackPredictedSpawnedGhostState: 0
+  RollbackPredictionOnStructuralChanges: 1
 --- !u!1001 &6703490052857664299
 PrefabInstance:
   m_ObjectHideFlags: 0

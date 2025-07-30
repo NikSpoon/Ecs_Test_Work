@@ -12,7 +12,7 @@ public struct PlayerInput : IInputComponentData
 [DisallowMultipleComponent]
 public class PlayerInputAuthoring : MonoBehaviour
 {
-    class CubeInputBaking : Unity.Entities.Baker<PlayerInputAuthoring>
+    class CubeInputBaking : Baker<PlayerInputAuthoring>
     {
         public override void Bake(PlayerInputAuthoring authoring)
         {

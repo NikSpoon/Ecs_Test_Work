@@ -19,16 +19,18 @@ public partial struct SetRpcSystemDynamicAssemblyListSystem : ISystem
         state.Enabled = false;
     }
 }
-
+[BurstCompile]
 public struct GoInGameRequest : IRpcCommand
 {
     public FixedString64Bytes PlayerNameRequest;
 }
+[BurstCompile]
 public struct PlayerInfo : IComponentData
 {
     public FixedString64Bytes PlayerName;
     public int SelectedCharacterIndex;
 }
+[BurstCompile]
 public struct PlayerIndexCounter : IComponentData
 {
     public int CurrentIndex;
