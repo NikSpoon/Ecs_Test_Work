@@ -24,7 +24,7 @@ public partial struct ServerBoneControlSystem : ISystem
                 if (boneName == "mixamorig:Spine1")
                 {
                     var transform = SystemAPI.GetComponentRW<LocalTransform>(linked.Value);
-                    transform.ValueRW = transform.ValueRW.RotateY(0.01f);
+                   
                 }
             }
         }
