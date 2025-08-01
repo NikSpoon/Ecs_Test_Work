@@ -12,7 +12,18 @@ public partial struct ServerBoneAnimationSystem : ISystem
               
             };
 
+<<<<<<< HEAD
             state.EntityManager.SetComponentData(entity, boneSync);
+=======
+                var boneName = SystemAPI.GetComponent<BoneTag>(linked.Value).BoneName;
+
+                if (boneName == "mixamorig:Spine1")
+                {
+                    var transform = SystemAPI.GetComponentRW<LocalTransform>(linked.Value);
+                   
+                }
+            }
+>>>>>>> origin/New
         }
     }
 }
