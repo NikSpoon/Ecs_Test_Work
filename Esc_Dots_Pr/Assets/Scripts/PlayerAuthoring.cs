@@ -20,9 +20,12 @@ public class PlayerAuthoring : MonoBehaviour
         {
             var entity = GetEntity(TransformUsageFlags.Dynamic);
             AddComponent<Player>(entity);
-          
 
-            // Сохраняем entity в поле авторинга (которое после Bake станет в рантайме)
+            AddComponent(entity, new AnimationStateData
+            {
+                Current = AnimationState.Idle // или любой стартовый стейт
+            });
+
             authoring.entity = entity;
         }
     }
